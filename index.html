@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.css">
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/npm.js"></script>
+    <!--my file-->
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--<p title="А вот и я!">Пример всплывающей подсказки</p>-->
+    <div class="container">
+        <div class="logo"><a href="#"><img src="img/logo.png"></a></div>
+        <!-- -----------------------< menu and search >-------------------- -->
+        <nav role="navigation" class="navbar navbar-default">
+            <!-- Логотип и мобильное меню -->
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">SeoBel.ru</a>
+            </div>
+            <!-- Навигационное меню -->
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Главная</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <!-- Выподающие меню с подпунктами -->
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Новости <b class="caret"></b></a>
+                        <ul role="menu" class="dropdown-menu">
+                            <li><a href="#">Меню 1</a></li>
+                            <li><a href="#">Меню 2</a></li>
+                            <li><a href="#">Меню 3</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Меню 4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Поиск по сайту -->
+                <form role="search" class="navbar-form navbar-left">
+                    <div class="form-group col-md-12">
+                        <input type="text" placeholder="Найти" class="form-control">
+                    </div>
+                </form>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Войти</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- ---------------< SLIDER >------------------------ -->
+        <div class="row height-slider">
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 slider-button-scrolling">
+                <span class="ss-icon" onclick="galleryspin('')">&lt;</span>
+            </div>
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 ">
+                <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/wanaka-tree.jpg">
+                <div id="carousel">
+                    <figure id="spinner">
+                        <img class="aaaqgdsd" src="wanaka-tree.jpg" alt>
+                        <img src="still-lake.jpg" alt>
+                        <img src="pink-milford-sound.jpg" alt>
+                        <img src="paradise.jpg" alt>
+                        <img src="morekai.jpg" alt>
+                        <img src="milky-blue-lagoon.jpg" alt>
+                        <img src="lake-tekapo.jpg" alt>
+                        <img src="milford-sound.jpg" alt>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 slider-button-scrolling">
+                <div  class="ss-icon" onclick="galleryspin('-')">&gt;</div>
+            </div>
+        </div>
+        <!----------------------< API >----------------------------->
+        <div class="row api_object_html"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="col-md-12 footer navbar navbar-default">
+            Tems of servise Privacy Policy &copy;2009 Design (www.desingnzzz.com)
+        </div>
+    </div>
+
+</body>
+</html>

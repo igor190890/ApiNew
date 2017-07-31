@@ -1,0 +1,173 @@
+/*#block-content{*/
+    /*width: 200px;*/
+/*}*/
+body {
+    background: url("img/fon-bacgraund.png") no-repeat, #ADA6A0;
+    background-position-x: center;
+}
+
+.logo {
+    margin: 44px auto 45px auto;
+    width: 200px;
+    height: 83px;
+}
+/* slider */
+div#carousel {
+    perspective: 1200px;
+    /*background: #ADA6A0;*/
+    padding-top: 10%;
+    font-size: 0;
+    /*margin-bottom: 3rem;*/
+    overflow: hidden;
+}
+
+figure#spinner {
+    transform-style: preserve-3d;
+    height: 300px;
+    transform-origin: 50% 50% -500px;
+    transition: 1s;
+}
+
+figure#spinner img {
+    width: 40%;
+    max-width: 425px;
+    position: absolute;
+    left: 30%;
+    transform-origin: 50% 50% -500px;
+    outline: 1px solid transparent;
+}
+
+figure#spinner img:nth-child(1) {  transform: rotateY(0deg);     }
+figure#spinner img:nth-child(2) {  transform: rotateY(-45deg);   }
+figure#spinner img:nth-child(3) {  transform: rotateY(-90deg);   }
+figure#spinner img:nth-child(4) {  transform: rotateY(-135deg);  }
+figure#spinner img:nth-child(5) {  transform: rotateY(-180deg);  }
+figure#spinner img:nth-child(6) {  transform: rotateY(-225deg);  }
+figure#spinner img:nth-child(7) {  transform: rotateY(-270deg);  }
+figure#spinner img:nth-child(8) {  transform: rotateY(-315deg);  }
+
+div#carousel ~ span {
+    color: #fff;
+    margin: 5%;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: 0.6s color;
+    position: relative;
+    margin-top: -6rem;
+    border-bottom: none;
+    line-height: 0;
+}
+
+div#carousel ~ span:hover {
+    color: #888;
+    cursor: pointer;
+}
+
+.slider-button-scrolling {
+    display: flex;
+    height: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.ss-icon {
+    margin: auto;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* jqwery script api */
+.api_art {
+    height: 500px;
+    padding: 15px;
+    margin: 15px 0;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(56, 28, 7, 1);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(56, 28, 7, 1);
+    box-shadow: 0px 0px 3px 0px rgba(56, 28, 7, 1);
+}
+
+.wrapp_for_img {
+
+}
+
+.row-bloks-img {
+    object-fit: cover;
+    height: 182px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.row-bloks-title {
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: maroon;
+    text-align: center;
+    height: 70px;
+}
+
+.row-bloks-titleVisible {
+
+}
+
+.toOpen {
+
+}
+
+.row-bloks-titleHidden {
+    display: none;
+}
+
+.row-bloks-author {
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: rebeccapurple;
+    text-align: center;
+}
+
+.row-bloks-description {
+    text-indent: 20px;
+    text-align: justify;
+    overflow: hidden;
+    height: 100px;
+}
+
+ .row-bloks-data {
+    display: block;
+     margin: 24px 0 0 0;
+     width: 50%;
+     float: left;
+}
+
+.row-bloks-link {
+    display: block;
+    float: left;
+    margin: 12px 0px 0px 10px;
+    width: 41%;
+}
+/*footer*/
+.footer {
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(56, 28, 7, 1);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(56, 28, 7, 1);
+    box-shadow: 0px 0px 3px 0px rgba(56, 28, 7, 1);
+    font-size: 14px;
+    color: #545454;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    line-height: 55px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
